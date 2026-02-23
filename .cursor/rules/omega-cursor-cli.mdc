@@ -1,0 +1,16 @@
+---
+description: Route "ask cursor" style requests to omega-cursor-cli headless wrapper
+alwaysApply: true
+---
+
+When users ask to run Cursor headless for analysis/brainstorming, execute:
+
+```bash
+node .claude/skills/omega-cursor-cli/scripts/ask-cursor.mjs "PROMPT"
+```
+
+If setup fails, run:
+
+```bash
+node .claude/skills/omega-cursor-cli/scripts/verify-setup.mjs
+```

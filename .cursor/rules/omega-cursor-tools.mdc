@@ -1,0 +1,12 @@
+---
+description: Usage reference for ask-cursor.mjs
+alwaysApply: false
+globs: "**/*.{ts,js,py,md,json}"
+---
+
+```bash
+node .claude/skills/omega-cursor-cli/scripts/ask-cursor.mjs "PROMPT" [--model MODEL] [--json] [--sandbox] [--timeout-ms N]
+```
+
+- `--json` maps to `cursor-agent --output-format json`.
+- `--sandbox` maps to `cursor-agent --force`.
