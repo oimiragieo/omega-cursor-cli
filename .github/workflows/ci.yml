@@ -30,5 +30,5 @@ jobs:
       - name: Format check
         run: npm run format:check
 
-      - name: Changelog check
-        run: node scripts/check-changelog.mjs
+      - name: Changelog policy check
+        run: npm run changelog:check
