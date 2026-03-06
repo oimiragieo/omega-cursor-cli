@@ -5,8 +5,11 @@ globs: "**/*.{ts,js,py,md,json}"
 ---
 
 ```bash
-node .claude/skills/omega-cursor-cli/scripts/ask-cursor.mjs "PROMPT" [--model MODEL] [--json] [--sandbox] [--timeout-ms N]
+node .claude/skills/omega-cursor-cli/scripts/ask-cursor.mjs "PROMPT" [--model MODEL] [--json] [--yolo] [--trust] [--approve-mcps] [--sandbox] [--timeout-ms N]
 ```
 
 - `--json` maps to `cursor-agent --output-format json`.
-- `--sandbox` maps to `cursor-agent --force`.
+- `--yolo` maps to `cursor-agent --yolo`. Auto-approves all tool calls for fully non-interactive pipelines.
+- `--trust` maps to `cursor-agent --trust`. Suppresses workspace permission prompts in headless environments.
+- `--approve-mcps` maps to `cursor-agent --approve-mcps`. Automatically approves MCP server connections.
+- `--sandbox` is a **deprecated** alias for `--yolo`. Will be removed in a future version.

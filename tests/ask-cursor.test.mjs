@@ -82,7 +82,7 @@ describe('buildCursorArgs', () => {
   it('constructs required args and optional flags', () => {
     const args = buildCursorArgs({
       prompt: 'analyze file',
-      model: 'claude-sonnet-4.5',
+      model: 'claude-4.6-sonnet',
       outputJson: true,
       yolo: true,
       trust: false,
@@ -93,7 +93,7 @@ describe('buildCursorArgs', () => {
       'json',
       '--yolo',
       '--model',
-      'claude-sonnet-4.5',
+      'claude-4.6-sonnet',
       'analyze file',
     ]);
   });
